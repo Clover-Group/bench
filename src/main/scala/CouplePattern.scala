@@ -9,7 +9,7 @@ import scala.annotation.tailrec
 import scala.collection.{mutable => m}
 import scala.language.higherKinds
 
-import org.openjdk.jmh.annotations.{Scope, State}
+import org.openjdk.jmh.annotations.{Benchmark}
 
 /** Couple Pattern */
 class CouplePattern[Event, State1 <: PState[T1, State1], State2 <: PState[T2, State2], T1, T2, T3](
